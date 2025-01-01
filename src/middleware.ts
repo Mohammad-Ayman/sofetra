@@ -14,10 +14,9 @@ export function middleware(request: NextRequest) {
     return NextResponse.redirect(new URL("/", request.url));
   }
 
-  // Allow the request if conditions are met
   return NextResponse.next();
 }
 
 export const config = {
-  matcher: ["/dashboard/:path*", "/"], // Apply to /dashboard and /
+  matcher: ["/dashboard/:path*", "/"],
 };
