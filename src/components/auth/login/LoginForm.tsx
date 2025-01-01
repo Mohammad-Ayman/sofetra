@@ -17,7 +17,7 @@ const LoginForm = () => {
   });
 
   const onSubmit = () => {
-    // document.cookie = "auth-token=your-secure-token; path=/; max-age=86400";
+    document.cookie = "auth-token=your-secure-token; path=/; max-age=86400";
     router.push("/dashboard");
   };
 
