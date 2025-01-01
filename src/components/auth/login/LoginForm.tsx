@@ -16,9 +16,8 @@ const LoginForm = () => {
     resolver: zodResolver(loginSchema),
   });
 
-  const onSubmit = (data: TLogin) => {
-    console.log("Form Submitted:", data);
-    document.cookie = "auth-token=your-secure-token; path=/; max-age=86400";
+  const onSubmit = () => {
+    // document.cookie = "auth-token=your-secure-token; path=/; max-age=86400";
     router.push("/dashboard");
   };
 
